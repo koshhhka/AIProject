@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.svg" alt="Логотип Кофейни">
+        </div>
+        <div class="header-right">
+            <div class="menu-btn" onclick="openSidebar()">☰</div>
+            <div class="cart">
+                <img src="img/shopping-basket.svg" alt="Корзина">
+            </div>
+        </div>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+        <a href="#home">Главная</a>
+        <a href="#menu">Меню</a>
+        <a href="#about">О нас</a>
+        <a href="#contact">Контакты</a>
+    </aside>
+
+    <main>
+        <section id="home" class="home">
+            <h1>Добро пожаловать в нашу Кофейню</h1>
+            <p>Здесь вы найдете лучшие сорта кофе и уютную атмосферу для отдыха и работы.</p>
+            <div class="home-images">
+                <img src="img/coffee1.jpg" alt="Кофе">
+                <img src="img/coffee2.jpg" alt="Кофейня">
+                <img src="img/coffee3.jpg" alt="Чашка кофе">
+            </div>
+        </section>
+        
+        <section id="menu" class="menu">
+            <h2>Меню</h2>
+            <div class="menu-section">
+                <h3>Горячие напитки</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="img/espresso.png" alt="Эспрессо">
+                        <h4>Эспрессо</h4>
+                        <p>Крепкий и ароматный эспрессо.</p>
+                        <p>150 руб.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/cappuccino.png" alt="Капучино">
+                        <h4>Капучино</h4>
+                        <p>Классический капучино с пенкой.</p>
+                        <p>200 руб.</p>
+                    </div>
+                    <!-- Добавьте больше карточек по необходимости -->
+                </div>
+            </div>
+            
+            <div class="menu-section">
+                <h3>Холодные напитки</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="img/ice-latte.png" alt="Ледяной латте">
+                        <h4>Ледяной латте</h4>
+                        <p>Освежающий ледяной латте.</p>
+                        <p>180 руб.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/frappe.png" alt="Фраппе">
+                        <h4>Фраппе</h4>
+                        <p>Сладкий и охлаждающий фраппе.</p>
+                        <p>220 руб.</p>
+                    </div>
+                    <!-- Добавьте больше карточек по необходимости -->
+                </div>
+            </div>
+            
+            <div class="menu-section">
+                <h3>Десерты</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="img/cheesecake.png" alt="Чизкейк">
+                        <h4>Чизкейк</h4>
+                        <p>Кремовый чизкейк с ягодами.</p>
+                        <p>250 руб.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/maffine.png" alt="Маффин">
+                        <h4>Маффин</h4>
+                        <p>Шоколадный маффин.</p>
+                        <p>120 руб.</p>
+                    </div>
+                    <!-- Добавьте больше карточек по необходимости -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>О нас</h2>
+            <p>Наша кофейня — это место, где каждый гость может насладиться высококачественным кофе и уютной атмосферой. Мы верим в то, что кофе — это больше, чем просто напиток. Это способ создать моменты радости и уюта.</p>
+            <p>Мы используем только свежие и отборные зерна, которые обжариваются нашими специалистами с многолетним опытом. Наша команда бариста каждый день готова предложить вам как классические, так и авторские кофейные напитки.</p>
+            <p>Кроме того, мы заботимся о том, чтобы каждый наш гость чувствовал себя комфортно. У нас вы найдете удобные зоны для работы и отдыха, бесплатный Wi-Fi и всегда приветливый персонал.</p>
+            <p>Приходите к нам, чтобы насладиться настоящим вкусом кофе и почувствовать себя как дома!</p>
+            <div class="about-images">
+                <img src="img/about1.png" alt="Интерьер кофейни">
+                <img src="img/about2.png" alt="Кофейный аппарат">
+                <img src="img/about3.png" alt="Счастливые гости">
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Контакты</h2>
+            <p>Мы всегда рады вас видеть! Ниже вы найдете информацию, как с нами связаться и как до нас добраться.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Адрес</h3>
+                    <p>ул. Примерная, д. 123, Москва, Россия</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Телефон</h3>
+                    <p>+7 (123) 456-78-90</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Электронная почта</h3>
+                    <p>info@coffeeshop.ru</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Часы работы</h3>
+                    <p>Понедельник - Пятница: 8:00 - 20:00</p>
+                    <p>Суббота - Воскресенье: 9:00 - 22:00</p>
+                </div>
+            </div>
+            <div class="contact-map">
+                <h3 class="how">Как нас найти</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.467327598218!2d37.62250431601405!3d55.7532159980797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afba0f72627%3A0xf09dbbfe61b170c4!2z0JDQstGC0L7QutCw0Y8g0L_RgNC-0YHQvy4sIDExMywg0JzQvtGB0LrQstCwLCAxMjMxMTI!5e0!3m2!1sru!2sru!4v1620898741760!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function openSidebar() {
+            document.getElementById("sidebar").style.width = "250px";
+        }
+
+        function closeSidebar() {
+            document.getElementById("sidebar").style.width = "0";
+        }
+    </script>
+</body>
+</html>
